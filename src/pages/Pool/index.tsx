@@ -2,7 +2,7 @@
 import React, { useContext, useMemo, useState } from 'react'
 import { ThemeContext } from 'styled-components'
 import { Pair } from '@pancakeswap-libs/sdk'
-import { Button, CardBody, Text } from '@pancakeswap-libs/uikit'
+import { Button, CardBody, Text } from '@canvaswap-libs/uikit'
 import { Link } from 'react-router-dom'
 // import CardNav from 'components/CardNav'
 import Question from 'components/QuestionHelper'

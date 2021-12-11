@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
-import { CardBody, ArrowDownIcon, Button, IconButton, Text } from '@pancakeswap-libs/uikit'
-import { ArrowWrapper, BottomGrouping, SwapCallbackError, Wrapper } from 'components/swap/styleds'
-import PageHeader from 'components/PageHeader'
+import { CardBody, Button, Text, Input } from '@canvaswap-libs/uikit'
+import { BottomGrouping, Wrapper } from 'components/swap/styleds'
+import { useWeb3React } from '@web3-react/core'
+import { CustomPageHeader } from 'components/PageHeader'
 import { AutoColumn } from 'components/Column'
 import AppBody from '../AppBody'
 
