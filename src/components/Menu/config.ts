@@ -2,24 +2,24 @@ import { MenuEntry } from '@pancakeswap-libs/uikit'
 
 const config: MenuEntry[] = [
   {
-    label: 'Home',
-    icon: 'HomeIcon',
-    href: '/home',
-  },
-  {
     label: 'Exchange',
-    icon: 'TradeIcon',
+    icon: 'SwapIcon',
     href: '/swap',
   },
   {
     label: 'Liquidity',
-    icon: 'TradeIcon',
+    icon: 'LiquidityIcon',
     href: '/pool',
-  },  
+  },
   {
     label: 'Create Token',
-    icon: 'HomeIcon',
+    icon: 'CanvasIcon',
     href: '/create',
+  },
+  {
+    label: 'View Token',
+    icon: 'TradeIcon',
+    href: '/view',
   },
 ]
 
