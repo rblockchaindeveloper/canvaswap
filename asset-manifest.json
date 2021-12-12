@@ -2,7 +2,7 @@
   "files": {
     "static/js/0.b749f4c7.chunk.js": "./static/js/0.b749f4c7.chunk.js",
     "main.css": "./static/css/main.cf13130b.chunk.css",
-    "main.js": "./static/js/main.12b3569b.chunk.js",
+    "main.js": "./static/js/main.e2e34873.chunk.js",
     "runtime-main.js": "./static/js/runtime-main.e582dc23.js",
     "static/css/3.10812dbb.chunk.css": "./static/css/3.10812dbb.chunk.css",
     "static/js/3.79e490c2.chunk.js": "./static/js/3.79e490c2.chunk.js",
@@ -16,16 +16,13 @@
     "static/js/4.f76f9833.chunk.js.LICENSE.txt": "./static/js/4.f76f9833.chunk.js.LICENSE.txt",
     "static/js/5.6ef9f42d.chunk.js.LICENSE.txt": "./static/js/5.6ef9f42d.chunk.js.LICENSE.txt",
     "static/media/inter.css": "./static/media/Inter.var.a738a131.woff2",
-    "static/media/coin.8dc4fda3.png": "./static/media/coin.8dc4fda3.png",
-    "static/media/font-awesome.css": "./static/media/fontawesome-webfont.f691f37e.woff",
-    "static/media/liquidity_grey.d9578702.svg": "./static/media/liquidity_grey.d9578702.svg",
-    "static/media/swap_grey.4d2d005f.svg": "./static/media/swap_grey.4d2d005f.svg"
+    "static/media/font-awesome.css": "./static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.e582dc23.js",
     "static/css/3.10812dbb.chunk.css",
     "static/js/3.79e490c2.chunk.js",
     "static/css/main.cf13130b.chunk.css",
-    "static/js/main.12b3569b.chunk.js"
+    "static/js/main.e2e34873.chunk.js"
   ]
 }
