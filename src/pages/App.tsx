@@ -1,23 +1,24 @@
 import React, { Suspense, useEffect, useState } from 'react'
-import { HashRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
-import { LangType } from '@pancakeswap-libs/uikit'
+import { LangType } from '@canvaswap-libs/uikit'
 import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
 import { RedirectDuplicateTokenIds, RedirectOldAddLiquidityPathStructure } from './AddLiquidity/redirects'
 import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
 import AddLiquidity from './AddLiquidity'
 import TokenCreate from './TokenCreate'
+import ViewTokens from './ViewTokens'
 import Pool from './Pool'
 import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
 import Swap from './Swap'
-import { RedirectPathToSwapOnly } from './Swap/redirects'
 import { EN, allLanguages } from '../constants/localisation/languageCodes'
 import { LanguageContext } from '../hooks/LanguageContext'
 import { TranslationsContext } from '../hooks/TranslationsContext'
 
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import 'font-awesome/css/font-awesome.css'
 // import'bootstrap/dist/css/bootstrap-theme.css';
 
 import Menu from '../components/Menu'
@@ -41,7 +42,11 @@ const BodyWrapper = styled.div`
   overflow-x: hidden;
   z-index: 1;
   justify-content: center;
+<<<<<<< HEAD
   background-color: #42C0FB;
+=======
+  background-color: #14163b;
+>>>>>>> main
   background-repeat: no-repeat;
   background-position: bottom 24px center;
   background-size: 90%;
@@ -95,7 +100,7 @@ export default function App() {
 
   return (
     <Suspense fallback={null}>
-      <HashRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <AppWrapper>
           <LanguageContext.Provider
             value={{
@@ -117,13 +122,12 @@ export default function App() {
                       <Route exact path="/add" component={AddLiquidity} />
                       <Route exact strict path="/create" component={TokenCreate} />
                       <Route exact strict path="/remove/:currencyIdA/:currencyIdB" component={RemoveLiquidity} />
-
-                      {/* Redirection: These old routes are still used in the code base */}
                       <Route exact path="/add/:currencyIdA" component={RedirectOldAddLiquidityPathStructure} />
                       <Route exact path="/add/:currencyIdA/:currencyIdB" component={RedirectDuplicateTokenIds} />
                       <Route exact strict path="/remove/:tokens" component={RedirectOldRemoveLiquidityPathStructure} />
-
-                      <Route component={RedirectPathToSwapOnly} />
+                      <Route exact strict path="/home" component={ViewTokens} />
+                      <Route exact strict path="/" component={ViewTokens} />
+                      <Redirect to="/404" />
                     </Switch>
                   </Web3ReactManager>
                   <Marginer />
@@ -132,7 +136,7 @@ export default function App() {
             </TranslationsContext.Provider>
           </LanguageContext.Provider>
         </AppWrapper>
-      </HashRouter>
+      </BrowserRouter>
     </Suspense>
   )
 }

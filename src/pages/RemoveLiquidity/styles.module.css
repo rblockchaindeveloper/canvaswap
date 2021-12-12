@@ -4,7 +4,10 @@
 }
 
 .partm{
-    width: 10% !important;
+    width: 2% !important;
+    margin-top:  7% !important;
+    margin-left: 0% !important;
+    margin-right: 1% !important;
 }
 
 .partr{
@@ -17,17 +20,36 @@
     margin-top: 25% !important;
 }
 
-.partlb{
-    margin-left: 0% !important;
+.partbl{
+    margin-left: 5% !important;
     margin-right: 0% !important;
-    width: 40% !important;
+    margin-top: 2% !important;
+
+    width: 45% !important;
+}
+
+.buttoncontainer{
+    width: 50% !important;
+    align-items: center !important;
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+    padding-bottom: 3px !important;
+}
+
+.buttoncontainersmall{
+    width: 50% !important;
+    align-items: center !important;
+    margin-left: 40% !important;
+    margin-right: 25% !important;
+    padding-bottom: 3px !important;
 }
 
 
-.partrb{
-    margin-left: 20% !important;
-
-    width: 40% !important;
+.partbr{
+    /* margin-left: 10% !important; */
+    margin-right: 5% !important;
+    /* margin-top: 10px !important; */
+    width: 45% !important;
 }
 
 .partb{
@@ -58,6 +80,26 @@
     width: 80% !important;
     border-radius:  20px !important;
     background-color: #1e215a !important;
+}
+
+.innerinnercardr{
+    margin: 1% !important;
+}
+
+.innercardl{
+    width: 46% !important;
+    border-radius:  29px !important;
+    margin-left: 2% !important;
+}
+
+.innercardr{
+    width: 46% !important;
+    border-radius:  29px !important;
+    margin-right: 2% !important;
+}
+
+.cardinner{
+    padding: 10px !important;
 }
 
 .card_img_top {

@@ -1,6 +1,6 @@
 import { Currency, ETHER, JSBI, TokenAmount } from '@pancakeswap-libs/sdk'
 import React, { useCallback, useEffect, useState } from 'react'
-import { Button, ChevronDownIcon, AddIcon, CardBody, Text } from '@pancakeswap-libs/uikit'
+import { Button, ChevronDownIcon, AddIcon, CardBody, Text } from '@canvaswap-libs/uikit'
 // import CardNav from 'components/CardNav'
 import { LightCard } from 'components/Card'
 import { AutoColumn, ColumnCenter } from 'components/Column'
@@ -82,8 +82,6 @@ export default function PoolFinder() {
   return (
     <>
       {/* <CardNav activeIndex={1} /> */}
-      <h1>yeh hai liquidity 3</h1>
-
       <AppBody>
         <FindPoolTabs />
         <CardBody>
@@ -132,7 +130,7 @@ export default function PoolFinder() {
                   <LightCard padding="45px 10px">
                     <AutoColumn gap="sm" justify="center">
                       <Text style={{ textAlign: 'center' }}>
-                        {TranslateString(212, 'You don’t have liquidity in this pool yet.')}
+                        {TranslateString(212, 'You don"t have liquidity in this pool yet.')}
                       </Text>
                       <StyledInternalLink to={`/add/${currencyId(currency0)}/${currencyId(currency1)}`}>
                         <Text style={{ textAlign: 'center' }}>{TranslateString(168, 'Add Liquidity')}</Text>
